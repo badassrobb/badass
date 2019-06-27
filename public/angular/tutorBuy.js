@@ -24,7 +24,7 @@ function mainController($scope, $window, $http, $cookies, $cookieStore){
     var cartItem = {
       book: true,
       tutor: "Book",
-      price: 69.95,
+      price: 19.95,
       // price: 1.00,
       subjectCategory: "",
       class: ""
@@ -44,7 +44,7 @@ function mainController($scope, $window, $http, $cookies, $cookieStore){
       hourBundle: hourPackage,
       subjectCategory: "",
       class: "",
-      rate: 65,
+      rate: 75,
       applyDiscount: 1
     };
     // Push purchase to scope
