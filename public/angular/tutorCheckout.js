@@ -104,7 +104,7 @@ function mainController($scope, $window, $http, $cookies, $cookieStore){
         } else if (item.hourBundle == "4") {
           $scope.total += (item.rate - (item.applyDiscount * 20) ) * 16;
         } else if (item.hourBundle == "5") {
-          $scope.total += (item.rate - (item.applyDiscount * 250) ) * 24;
+          $scope.total += (item.rate - (item.applyDiscount * 25) ) * 24;
         } else if (item.hourBundle == "6") {
           $scope.total += (item.rate - (item.applyDiscount * 10) ) * 16;
         } else if (item.hourBundle == "7") {
