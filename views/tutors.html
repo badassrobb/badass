@@ -190,7 +190,7 @@
                 <div class="panel-body" text-left>
                   <div class="col-sm-4 text-center">
                     <img ng-src="{{tutor.photo}}" class="img-responsive center-block tutor-photo" alt="" data-toggle="modal" data-target="#tutorDetailModal" ng-click="updateModal($index)">
-                    <p><b>Rates:</b> ${{ tutor.rate }} - ${{ tutor.rate - 20 | number:0 }} per hour</p>
+                    <p><b>Rates:</b> ${{ tutor.rate + 10 }} - ${{ tutor.rate - 15 | number:0 }} per hour</p>
                     <button type="button" class="btn btn-danger btn-lg btn-block" ng-click="buyTutor($index, false)">Book Tutor</button>
                   </div>
                   <div class="col-sm-8">
@@ -236,7 +236,7 @@
                 <div class="panel-body" text-left>
                   <div class="col-sm-4 text-center">
                     <img ng-src="{{tutor.photo}}" class="img-responsive center-block tutor-photo" alt="" data-toggle="modal" data-target="#tutorDetailModal" ng-click="updateModal($index)">
-                    <p><b>Rates:</b> ${{ tutor.rate }} - ${{ tutor.rate - 20 | number:0 }} per hour</p>
+                    <p><b>Rates:</b> ${{ tutor.rate + 10 }} - ${{ tutor.rate - 15 | number:0 }} per hour</p>
                     <button type="button" class="btn btn-danger btn-lg btn-block" ng-click="buyTutor($index, true)">Book Tutor</button>
                   </div>
                   <div class="col-sm-8">
