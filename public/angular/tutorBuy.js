@@ -44,7 +44,7 @@ function mainController($scope, $window, $http, $cookies, $cookieStore){
       hourBundle: hourPackage,
       subjectCategory: "",
       class: "",
-      rate: 75,
+      rate: 65,
       applyDiscount: 1
     };
     // Push purchase to scope
@@ -79,17 +79,17 @@ function mainController($scope, $window, $http, $cookies, $cookieStore){
       if (item.hourBundle == "1") {
         $scope.total += item.rate;
       } else if (item.hourBundle == "2") {
-        $scope.total += (item.rate - 10) * 4;
+        $scope.total += (item.rate - 5) * 4;
       } else if (item.hourBundle == "3") {
-        $scope.total += (item.rate - 15) * 8;
+        $scope.total += (item.rate - 10) * 8;
       } else if (item.hourBundle == "4") {
-        $scope.total += (item.rate - 20) * 16;
+        $scope.total += (item.rate - 15) * 16;
       } else if (item.hourBundle == "5") {
-        $scope.total += (item.rate - 25) * 24;
+        $scope.total += (item.rate - 20) * 24;
       } else if (item.hourBundle == "6") {
-        $scope.total += (item.rate - 10) * 16;
+        $scope.total += (item.rate - 5) * 16;
       } else if (item.hourBundle == "7") {
-        $scope.total += (item.rate - 10) * 24;
+        $scope.total += (item.rate - 5) * 24;
       }
     });
     // Set Cookie of purhcase
